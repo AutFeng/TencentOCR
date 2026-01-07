@@ -412,18 +412,3 @@ app/src/main/java/com/project/demo/
 ### API文档参考
 - 腾讯云OCR API：https://cloud.tencent.com/document/product/866/33524
 - 腾讯云V3签名：https://cloud.tencent.com/document/api/866/33518
-
-## 源码仓库
-
-项目源码已上传至GitHub：
-```
-https://github.com/yourusername/idcard-ocr-android
-```
-
-克隆命令：
-```bash
-git clone https://github.com/yourusername/idcard-ocr-android.git
-```
-
-## 许可证
-MIT License

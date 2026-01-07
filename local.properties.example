@@ -1,0 +1,12 @@
+## 本文件是 local.properties 的示例文件
+## 请复制此文件并重命名为 local.properties，然后填入您的真实密钥
+
+# Android SDK 路径(Android Studio 会自动生成)
+sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+
+# 腾讯云 API 密钥配置
+# 请在腾讯云控制台获取您的 SecretId 和 SecretKey
+# 访问: https://console.cloud.tencent.com/cam/capi
+
+TENCENT_SECRET_ID=your_secret_id_here
+TENCENT_SECRET_KEY=your_secret_key_here

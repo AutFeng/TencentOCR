@@ -1,6 +1,7 @@
 package com.project.demo.utils
 
 import android.util.Log
+import com.project.demo.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
@@ -13,9 +14,9 @@ object TencentOCRService {
 
     private const val TAG = "TencentOCRService"
 
-    // 请替换为您自己的密钥信息
-    private const val SECRET_ID = "YOUR_SECRET_ID"
-    private const val SECRET_KEY = "YOUR_SECRET_KEY"
+    // 从 BuildConfig 读取密钥(密钥存储在 local.properties 中)
+    private val SECRET_ID = BuildConfig.TENCENT_SECRET_ID
+    private val SECRET_KEY = BuildConfig.TENCENT_SECRET_KEY
 
     private const val SERVICE = "ocr"
     private const val HOST = "ocr.tencentcloudapi.com"

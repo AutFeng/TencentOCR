@@ -15,6 +15,16 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // 从 local.properties 读取密钥
+        val properties = java.util.Properties()
+        val localPropertiesFile = rootProject.file("local.properties")
+        if (localPropertiesFile.exists()) {
+            properties.load(localPropertiesFile.inputStream())
+        }
+
+        buildConfigField("String", "TENCENT_SECRET_ID", "\"${properties.getProperty("TENCENT_SECRET_ID", "")}\"")
+        buildConfigField("String", "TENCENT_SECRET_KEY", "\"${properties.getProperty("TENCENT_SECRET_KEY", "")}\"")
     }
 
     buildTypes {
@@ -35,6 +45,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
