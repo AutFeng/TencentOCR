@@ -412,3 +412,6 @@ app/src/main/java/com/project/demo/
 ### API文档参考
 - 腾讯云OCR API：https://cloud.tencent.com/document/product/866/33524
 - 腾讯云V3签名：https://cloud.tencent.com/document/api/866/33518
+
+### 运行截图
+![image](DEMO.png)
